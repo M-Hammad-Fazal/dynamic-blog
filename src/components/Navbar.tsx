@@ -10,16 +10,16 @@ export default function Navbar(){
         const updateDateTime = () => {
             const now = new Date();
             const options: Intl.DateTimeFormatOptions = {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
                 hour12: false
             }
-            setCurrentDateTime(now.toLocaleDateString('en-US', options))
+            setCurrentDateTime(now.toLocaleDateString("en-US", options))
         }
 
         updateDateTime();
